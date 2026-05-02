@@ -1,0 +1,32 @@
+{
+  "name": "windows-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Windows Explorer-like web application with Vue 3 and Elysia",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "dev:backend": "bun run --filter backend dev",
+    "dev:frontend": "bun run --filter frontend dev",
+    "build": "bun run --filter '*' build",
+    "test": "bun run --filter '*' test",
+    "test:backend": "bun run --filter backend test",
+    "test:frontend": "bun run --filter frontend test",
+    "test:e2e": "bun run --filter frontend test:e2e",
+    "db:generate": "bun run --filter backend db:generate",
+    "db:migrate": "bun run --filter backend db:migrate",
+    "db:seed": "bun run --filter backend db:seed",
+    "lint": "bun run --filter '*' lint",
+    "typecheck": "bun run --filter '*' typecheck"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10",
+    "playwright": "^1.59.1",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
