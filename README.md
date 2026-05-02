@@ -213,7 +213,3 @@ bunx playwright test
 | `bun run db:seed` | Seed database with sample data |
 | `bun run lint` | Lint all packages |
 | `bun run typecheck` | Type check all packages |
-
-## License
-
-MIT
